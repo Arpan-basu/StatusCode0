@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {background: rgba(0, 0, 0, .6);}
+
+.container {
+  // ignore this
+  display: block;
+  position: relative;
+  width: 414px;
+  height: 640px;
+  margin: 0 auto;
+  background: white;
+}
+
+.upgradePopup {
+  position: absolute;
+  width: 320px;
+  height: 480px;
+  display: block;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  font-smoothing: antialiased;
+  font-family: Roboto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px (rgba(0, 0, 0, .4));
+  padding: 20px;
+  background-image: url('http://static.swingbyswing.com/clubhouse/premiumPopupBG-320x480@2x.png');
+  background-size: 100% 100%;
+  
+  .closeButton {
+    position: absolute;
+    top: -18px; 
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    display: block;
+    cursor: pointer;
+    background-image: url('http://static.swingbyswing.com/clubhouse/popupClose@2x.png');
+    background-size: 36px 36px;
+  }
+  
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  span.saleBanner {
+    align-self: flex-start;
+    background: #008a00;
+    display: block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-family: Roboto;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    margin:0 auto 10px;
+    padding: 0;
+    border-radius: 15px;
+
+  }
+
+  h1 {
+    font-family: Roboto;
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+    padding: 0px 0 5px 0;
+    margin: 0;
+    color: white;
+  }
+  
+  img.premiumLogo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  p {
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+  }
+  
+  .button {
+    font-family: Roboto;
+    appearance: none;
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 18px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    
+    &.CTA {
+      background: darkorange;
+      font-weight: 900;
+      font-size: 20px;
+      color: white;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+    
+    &.noThanks {
+      align-self: flex-end;
+      background: none;
+      font-size: 16px;
+      color: white;
+      text-decoration: underline;
+      margin-bottom: 0;
+    }
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container"><!-- ignore .container -->
+
+        <div class="upgradePopup">
+          <a href="app://close">
+            <div class="closeButton"></div>
+          </a>
+          <div class="centered">
+            <img src="http://static.swingbyswing.com/clubhouse/SwingUPremium-logo-36h-white@2x.png" class="premiumLogo" alt="SwingU Premium" width="auto" height="36px" style="margin-bottom:20px;">
+            <!--<img src="http://static.swingbyswing.com/clubhouse/playsLike-inapppopup.png" alt="Plays Like" width="246" height="170">-->
+            <!--<img src="http://static.swingbyswing.com/clubhouse/shotTrackinginroundpopup2.png" alt="Shot Tracking" width="228" height="151">-->
+            <!--<img src="http://static.swingbyswing.com/clubhouse/tapanddraginroundpopup.png" alt="Tap and Drag Distances" width="220" height="220">-->
+            <!--<img src="http://static.swingbyswing.com/clubhouse/scoreentryinroundpopup.png" alt="Advanced Scorecard" width="240" height="150">-->
+            <!--<img src="http://static.swingbyswing.com/clubhouse/drillsinroundpopup-(1).png" alt="Golf Drills" width="240" height="135">-->
+            <img src="http://static.swingbyswing.com/clubhouse/holeinsightsinroundpopup.png" alt="Hole Insights" width="240" height="174">
+            <p>Make this subtext field dynamic, please and thank you</p>
+            <a class="button CTA" href="#">Get 40% Off Premium</a>
+          </div>
+        </div>
+          
+        </div>
+</body>
+</html>
